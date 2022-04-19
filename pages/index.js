@@ -1,8 +1,17 @@
 import React from 'react';
+import Link from 'next/link'
 
 const Home = () => {
     return (
-        <h1>home page</h1>
+        <div>
+            <h1>home page</h1>
+            <Link href="/blog">
+                <a>blog</a>
+            </Link>
+            <Link href="/product">
+                <a>product</a>
+            </Link>
+        </div>
     );
 };
 
